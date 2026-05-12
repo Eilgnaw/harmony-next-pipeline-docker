@@ -19,7 +19,7 @@ ENV PATH=$JAVA_HOME/bin:$PATH
 
 # 下载并安装 HarmonyOS CLI 工具
 RUN mkdir -p /opt/harmonyos-tools && \
-    wget -q -O /tmp/commandline-tools-linux.zip http://111.229.138.92/commandline-tools-linux-x64-6.0.1.268.zip && \
+    wget -q -O /tmp/commandline-tools-linux.zip https://harmonyos.b-cdn.net/commandline-tools-linux-x64-6.1.0.830.zip && \
     unzip -q /tmp/commandline-tools-linux.zip -d /opt/harmonyos-tools/ && \
     chmod -R +x /opt/harmonyos-tools/command-line-tools/bin && \
     rm /tmp/commandline-tools-linux.zip
